@@ -58,6 +58,10 @@ header {
     font-family: var(--text-font);
 }
 
+.navigation .fa-bars {
+    display: none;
+}
+
 #header-bg {
     min-width: 100vw;
     max-width: 100vw;
@@ -215,6 +219,10 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) {
+    .navigation nav {
+        width: 50%;
+    }
+    
     .intro {
         width: 100%;
     }
@@ -234,5 +242,17 @@ footer p {
 
     form input, select, #submit-btn {
         width: 70%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .navigation nav {
+        display: none;
+    }
+
+    .navigation .fa-bars {
+        display: inline-block;
+        margin-right: 5%;
+        font-size: 18px;
     }
 }
