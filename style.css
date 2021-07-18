@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100;300&display=swap');
+
+:root {
+    --logo-font: 'Kaushan Script', cursive;
+    --text-font: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+header {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 2%;
+    background-color: transparent;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    max-height: 50px;
+}
+
+.navigation #logo {
+    user-select: none;
+    font-family: var(--logo-font);
+}
+
+.navigation nav {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation nav a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--text-font);
+}
+
+#header-bg {
+    min-width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    object-fit: cover;
+    /* overflow: hidden; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #1a2a6cc4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdbb2d9e, #b21f1fb3, #1a2a6ca1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdbb2d98, #b21f1f98, #1a2a6cb9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro h1 {
+    font-family: var(--logo-font);
+    font-size: 90px;
+}
+
+.intro p {
+    font-family: var(--text-font);
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* home */
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+main {
+    margin-top: 5%;
+}
+
+.home > article {
+    width: 60%;
+    font-family: var(--text-font);
+    margin-bottom: 5%;
+}
+
+h3 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+table {
+    width: 70%;
+    text-align: center;
+    margin: 3% 15%;
+}
+
+th {
+    margin: 2% 0;
+    padding: 1%;
+    /* background-color: rgba(255, 0, 0, 0.46); */
+    border-bottom: 1px solid blue;
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-container {
+    width: 50%;
+    /* border: 1px solid red; */
+    min-height: 200px;
+    padding: 2%;
+    margin-bottom: 5%;
+    display: grid;
+    place-items: center;
+    font-family: var(--text-font);
+}
+
+.form-container h2 {
+    margin-bottom: 3%;
+}
+
+.form-container form {
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 1%;
+}
+
+form input, select {
+    width: 50%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2%;
+    font-family: var(--text-font);
+    margin-bottom: 3%;
+}
+
+#submit-btn {
+    width: 50%;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: var(--text-font);
+    font-size: 17px;
+    background: blue;  
+    cursor: pointer;
+}
+
