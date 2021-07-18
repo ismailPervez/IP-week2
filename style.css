@@ -192,3 +192,25 @@ form input, select {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+    .intro {
+        width: 100%;
+    }
+    .intro h1 {
+        text-align: center;
+        font-size: 60px;
+    }
+    .home > article {
+        width: 80%;
+        font-family: var(--text-font);
+        margin-bottom: 5%;
+    }
+
+    .form-container {
+        width: 80%;
+    }
+
+    form input, select, #submit-btn {
+        width: 70%;
+    }
+}
