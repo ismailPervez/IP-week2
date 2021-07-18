@@ -101,6 +101,11 @@ header {
     font-style: italic;
 }
 
+.intro .description {
+    font-size: 20px;
+    font-style: none;
+}
+
 /* home */
 .home {
     min-height: 100vh;
